@@ -7,5 +7,6 @@ name = input()
 print('Hi,', name)
 
 
-another_name = input('Input you name')
+another_name = input('Input you name: ')
 print('Hello,', another_name)
+print('Nice to meet you ;)')
