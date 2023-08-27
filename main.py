@@ -91,4 +91,76 @@ remainder = population % 2
 survivors = (population // 2) + remainder
 print(survivors)
 
+# В купейном вагоне имеется 9 купе с четырьмя местами для пассажиров в каждом. Напишите программу, которая определяет номер купе, в котором находится место с заданным номером (нумерация мест сквозная, начинается с 1)
+place_number = int(input())
+compartment_number = (place_number + 3) // 4
+print(compartment_number)
+
+# Напишите программу для пересчёта величины временного интервала, заданного в минутах, в величину, выраженную в часах и минутах.
+minutes = int(input())
+hour = minutes // 60
+minute = minutes - (hour * 60)
+print(minutes, 'мин - это', hour, 'час', minute, 'минут.')
+
+# Программа получения цифр двузначного числа
+num = 17
+a = num % 10
+b = num // 10
+print(a)  # 7
+print(b)  # 1
+
+# Программа получения цифр трёхзначного числа
+num = 754
+a = num % 10
+b = (num % 100) // 10
+c = num // 100
+print(a)  # 4
+print(b)  # 5
+print(c)  # 7
+
+# Напишите программу, определяющую число десятков и единиц в двузначном числе
+num = int(input())
+last_digit = num % 10
+first_digit = num // 10
+print('Число десятков =', first_digit)
+print('Число единиц =', last_digit)
+
+# Напишите программу, в которую вводится трёхзначное число и которая выводит на экран его цифры (через запятую)
+num = int(input())
+digit3 = num % 10
+digit2 = (num // 10) % 10
+digit1 = num // 100
+print(digit1, digit2, digit3, sep=',')
+
+# Напишите программу, в которой рассчитывается сумма и произведение цифр положительного трёхзначного числа.
+num = int(input())
+digit3 = num % 10
+digit2 = (num // 10) % 10
+digit1 = num // 100
+print('Сумма цифр =', digit1 + digit2 + digit3)
+print('Произведение цифр =', digit1 * digit2 * digit3)
+
+# Дано трехзначное число abc, в котором все цифры различны. Напишите программу, которая выводит шесть чисел, образованных при перестановке цифр заданного числа. (abc,acb,bac,bca,cab,cba)
+num = int(input())
+digit_c = num % 10
+digit_b = (num // 10) % 10
+digit_a = num // 100
+print(digit_a, digit_b, digit_c, sep='')
+print(digit_a, digit_c, digit_b, sep='')
+print(digit_b, digit_a, digit_c, sep='')
+print(digit_b, digit_c, digit_a, sep='')
+print(digit_c, digit_a, digit_b, sep='')
+print(digit_c, digit_b, digit_a, sep='')
+
+# Напишите программу для нахождения цифр четырёхзначного числа.
+num = int(input())
+digit_units = num % 10
+digit_tens = (num // 10) % 10
+digit_hundreds = (num // 100) % 10
+digit_thousand = num // 1000
+print('Цифра в позиции тысяч равна', digit_thousand)
+print('Цифра в позиции сотен равна', digit_hundreds)
+print('Цифра в позиции десятков равна', digit_tens)
+print('Цифра в позиции единиц равна', digit_units)
+
 
