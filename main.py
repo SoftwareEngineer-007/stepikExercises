@@ -70,3 +70,18 @@ print(x, x*2, x*3, x*4, x*5, sep='---')
 
 # 4 Lesson topic: working with integers
 
+# Геометрическая прогрессия
+b1 = int(input())
+q = int(input())
+n = int(input())
+b = b1 * q ** (n-1)
+print(b)
+
+# n школьников делят k мандаринов поровну, неделящийся остаток остается в корзине. Сколько целых мандаринов достанется каждому школьнику? Сколько целых мандаринов останется в корзине?
+schoolboy = int(input())
+orange = int(input())
+to_every_schoolboy = orange // schoolboy
+in_basket = orange % schoolboy
+print(to_every_schoolboy)
+print(in_basket)
+
