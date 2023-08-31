@@ -240,3 +240,62 @@ if num3 - num2 == num2 - num1:
 else:
     print('NO')
 
+# Напишите программу, которая определяет наименьшее из двух чисел.
+num1 = int(input())
+num2 = int(input())
+if num1 > num2:
+    print(num2)
+else:
+    print(num1)
+
+# Напишите программу, которая определяет наименьшее из четырёх чисел.
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+if num1 > num2:
+    num12 = num2
+else:
+    num12 = num1
+if num3 > num4:
+    num34 = num4
+else:
+    num34 = num3
+if num12 > num34:
+    print(num34)
+else:
+    print(num12)
+
+# Напишите программу, которая по введённому возрасту пользователя сообщает, к какой возрастной группе он относится:
+# до 13 включительно – детство;
+# от 14 до 24 – молодость;
+# от 25 до 59 – зрелость;
+# от 60 – старость.
+age = int(input())
+if age <= 13:
+    print('детство')
+if 14 <= age <= 24:
+    print('молодость')
+if 25 <= age <= 59:
+    print('зрелость')
+if age >= 60:
+    print('старость')
+
+# Напишите программу, которая считывает три числа и подсчитывает сумму только положительных чисел.
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+if num1 >= 0:
+    num1 = num1
+else:
+    num1 = 0
+if num2 >= 0:
+    num2 = num2
+else:
+    num2 = 0
+if num3 >= 0:
+    num3 = num3
+else:
+    num3 = 0
+print(num1 + num2 + num3)
+
