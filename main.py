@@ -527,3 +527,36 @@ elif 36>=num>=29 and num % 2 != 0:
 else:
     print('красный')
 
+# На числовой прямой даны два отрезка. Напишите программу, которая находит их пересечение.
+# Пересечением двух отрезков может быть:
+# отрезок;
+# точка;
+# пустое множество.
+# Формат входных данных: На вход программе подаются 4 целых числа, каждое на отдельной строке. Гарантируется, что a1 < b1 и a2 < b2
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+
+if b1 < a2 or b2 < a1:
+    print('Empty set')
+elif b1 == a2:
+    print(b1)
+elif b2 == a1:
+    print(b2)
+elif a1 <= a2 < b1 < b2:
+    print(a2, b1)
+elif a2 <= a1 < b2 < b1:
+    print(a1, b2)
+elif a1 < a2 < b2 <= b1:
+    print(a2, b2)
+elif a2 < a1 < b1 <= b2:
+    print(a1, b1)
+elif a2 < a1 < b1 < b2:
+    print(a1, b1)
+elif a1 < a2 < b2 < b1:
+    print(a2, b2)
+elif a1 == a2 and b1 == b2:
+    print(a1, b1)
+else:
+    print('Error')
